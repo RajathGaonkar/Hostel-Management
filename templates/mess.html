@@ -41,14 +41,15 @@
     {% endfor %}
   </table>
 
+  <h3> Veg Mess fees:25,000/-</h3>
+  <br> <h3> Non-Veg Mess fees:50,000/-</h3>
+
   {% from "includes/_formhelpers.html" import render_field %}
   <form method="POST" action="">
     <div class="form-group">
-      {{render_field(form.type, class_="form-control")}}
+      {{render_field(form.type1, class_="form-control")}}
     </div>
-    <div class="form-group">
-      {{render_field(form.super, class_="form-control")}}
-    </div>
+    
     <p><input type="submit" class="btn btn-primary" value="Save"></p>
   </form>
  

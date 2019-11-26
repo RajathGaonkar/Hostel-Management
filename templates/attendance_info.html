@@ -54,6 +54,8 @@
     <th style="width:30%;">Status</th>
     <th style="width:40%;">Review</th>
   </tr>
+  <h3> The student's attendance is {{perc}}%<h3>
+    <p> {{msg1}}</p>
   {% for d in details %}
       <tr>
         <td>{{d._date}}</td>
@@ -63,9 +65,12 @@
     {% endfor %}
 </table>
 
+
 <script>
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
+
+
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
@@ -81,6 +86,10 @@ function myFunction() {
       }
     }       
   }
+
+ 
+
+
 }
 </script>
 
